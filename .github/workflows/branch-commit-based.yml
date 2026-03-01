@@ -1,0 +1,15 @@
+name: branch-commit-based-workflow
+on:
+  push:
+    branches:
+      - test
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Greetings
+        run: echo "Hello World!"
+      - name: Print GoodBye
+        run: echo "Done-Bye!"
+      - name: Last Stage
+        run: echo "Thank you all - Bye!"
